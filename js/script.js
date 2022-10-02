@@ -73,6 +73,14 @@ const desktopCartBtn = document.querySelector(".container__desktop-cart-btn");
 
 const shopingDesktop = document.querySelector(".container__desktop-cart__box");
 
+const shopingRate = document.querySelector(
+  ".container__header__nav-right-side__rate"
+);
+
+const shopingRateDesktop = document.querySelector(
+  ".container__header__desktop-right-side__rate"
+);
+
 // FUNCTION WHICH ADD SHADOW TO SMALL SHOES IMG
 const changeImgShadow = (e) => {
   smallShoeImg.forEach((item) => item.classList.remove("img-active"));
@@ -139,6 +147,8 @@ const shoping = () => {
     fullCart.classList.remove("shoping");
     cartQuantity.textContent = Number(quantity.textContent);
     cartResult.textContent = `$${125 * cartQuantity.textContent}.00`;
+    shopingRate.classList.remove("shoping");
+    shopingRate.textContent = Number(quantity.textContent);
   }
 };
 
@@ -148,11 +158,13 @@ console.log(Number(quantity.textContent));
 const clear = () => {
   emptyCart.classList.remove("shoping");
   fullCart.classList.add("shoping");
+  shopingRate.classList.add("shoping");
 };
 
 const clearDesktopCart = () => {
   emptyCartDesktop.classList.remove("shoping");
   shopingDesktop.classList.add("shoping");
+  shopingRateDesktop.style.display = "none";
 };
 
 // FUNCTION WHICH SHOW CART ON DESKTOP
@@ -170,6 +182,8 @@ const showDesktopProduct = () => {
     shopingDesktop.classList.remove("shoping");
     desktopQuantity.textContent = Number(quantity.textContent);
     desktopResult.textContent = `$${125 * desktopQuantity.textContent}.00`;
+    shopingRateDesktop.style.display = "flex";
+    shopingRateDesktop.textContent = Number(quantity.textContent);
   }
 };
 
