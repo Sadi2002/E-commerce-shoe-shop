@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="./sass/main.css" />
+    <title>E-commerce product page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <!-- header on mobile -->
+      <header class="container__header">
+        <nav class="container__header__nav">
+          <div class="container__header__nav-left-side">
+            <img
+              src="./images/icon-menu.svg"
+              alt="menu 3 paskowe"
+              class="container__header__nav-burger"
+            />
+            <h2 class="container__header__nav-title">sneakers</h2>
+          </div>
+          <div class="container__header__nav-right-side">
+            <img
+              src="./images/icon-cart.svg"
+              alt="wozek sklepowy"
+              class="container__header__nav-right-side__cart"
+            />
+            <img
+              src="./images/image-avatar.png"
+              alt="młoda mezczyzna z dlugimi wlosami"
+              class="container__header__nav-right-side__user"
+            />
+          </div>
+        </nav>
+        <section class="container__menu">
+          <img
+            src="./images/icon-close.svg"
+            alt="X"
+            class="container__menu-close"
+          />
+          <ul class="container__menu-list">
+            <li class="container__menu-list__item">
+              <a href="#" class="container__menu-list__item-link"
+                >Collections</a
+              >
+            </li>
+            <li class="container__menu-list__item">
+              <a href="#" class="container__menu-list__item-link">Men</a>
+            </li>
+            <li class="container__menu-list__item">
+              <a href="#" class="container__menu-list__item-link">Women</a>
+            </li>
+            <li class="container__menu-list__item">
+              <a href="#" class="container__menu-list__item-link">About</a>
+            </li>
+            <li class="container__menu-list__item">
+              <a href="#" class="container__menu-list__item-link">Contact</a>
+            </li>
+          </ul>
+        </section>
+      </header>
+      <section class="container__images">
+        <div id="carouselExampleControls" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/image-product-1.jpg"
+                class="d-block w-100 h-75"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/image-product-2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/image-product-3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/image-product-4.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="container__images-cart container__images-cart-active">
+          <span class="container__images-cart-title">Cart</span>
+          <span class="container__images-cart__box-empty"
+            >Your cart is empty.</span
+          >
+          <div class="container__images-cart__box shoping">
+            <div class="container__images-cart__box-column">
+              <img
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="biale buty"
+                class="container__images-cart__box-img"
+              />
+              <div class="container__images-cart__box-text">
+                <span class="container__images-cart__box-text__describe">
+                  Autumn Limited Edition...
+                </span>
+                <div class="container__images-cart__box-text__price">
+                  <span class="container__images-cart__box-text__sum">
+                    $125.00 x
+                  </span>
+                  <span class="container__images-cart__box-text__quantity">
+                  </span>
+                  <span class="container__images-cart__box-text__result"
+                    >$375.00</span
+                  >
+                </div>
+              </div>
+
+              <img
+                src="./images/icon-delete.svg"
+                alt="ikona śmietnika"
+                class="container__images-cart__box-delete"
+              />
+            </div>
+            <button class="container__images-cart-btn">Checkout</button>
+          </div>
+        </div>
+      </section>
+
+      <header class="container__header-desktop">
+        <div class="container__header-desktop-left-side">
+          <h2 class="container__header-desktop-title">sneakers</h2>
+          <ul class="container__header-desktop__list">
+            <li class="container__header-desktop__list-item">
+              <a href="#" class="container__header-desktop__list-item__link"
+                >Collections</a
+              >
+            </li>
+            <li class="container__header-desktop__list-item">
+              <a href="#" class="container__header-desktop__list-item__link"
+                >Men</a
+              >
+            </li>
+            <li class="container__header-desktop__list-item">
+              <a href="#" class="container__header-desktop__list-item__link"
+                >Women</a
+              >
+            </li>
+            <li class="container__header-desktop__list-item">
+              <a href="#" class="container__header-desktop__list-item__link"
+                >About</a
+              >
+            </li>
+            <li class="container__header-desktop__list-item">
+              <a href="#" class="container__header-desktop__list-item__link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="container__header-desktop-right-side">
+          <img
+            src="./images/icon-cart.svg"
+            alt="wozek sklepowy"
+            class="container__header-desktop-right-side__cart"
+          />
+          <img
+            src="./images/image-avatar.png"
+            alt="młoda mezczyzna z dlugimi wlosami"
+            class="container__header-desktop-right-side__user"
+          />
+        </div>
+      </header>
+
+      <div class="container__desktop-cart container__images-cart-active">
+        <span class="container__desktop-cart-title">Cart</span>
+        <span class="container__desktop-cart__box-empty"
+          >Your cart is empty.</span
+        >
+        <div class="container__desktop-cart__box shoping">
+          <div class="container__desktop-cart__box-column">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="biale buty"
+              class="container__desktop-cart__box-img"
+            />
+            <div class="container__desktop-cart__box-text">
+              <span class="container__desktop-cart__box-text__describe">
+                Autumn Limited Edition...
+              </span>
+              <div class="container__desktop-cart__box-text__price">
+                <span class="container__desktop-cart__box-text__sum">
+                  $125.00 x
+                </span>
+                <span class="container__desktop-cart__box-text__quantity"
+                  >0
+                </span>
+                <span class="container__desktop-cart__box-text__result"
+                  >$375.00</span
+                >
+              </div>
+            </div>
+
+            <img
+              src="./images/icon-delete.svg"
+              alt="ikona śmietnika"
+              class="container__desktop-cart__box-delete"
+            />
+          </div>
+          <button class="container__desktop-cart-btn">Checkout</button>
+        </div>
+      </div>
+
+      <section class="container__images-desktop">
+        <img
+          src="./images/image-product-1.jpg"
+          alt="dwa buty, jeden stoi na czubku"
+          class="container__images-desktop-item"
+        />
+        <div class="container__images-desktop__img-box">
+          <img
+            src="./images/image-product-1-thumbnail.jpg"
+            alt="biale buty"
+            class="container__images-desktop__img-box-item img-active"
+            data-shoe="1"
+          /><img
+            src="./images/image-product-2-thumbnail.jpg"
+            alt="biale buty"
+            class="container__images-desktop__img-box-item"
+            data-shoe="2"
+          /><img
+            src="./images/image-product-3-thumbnail.jpg"
+            alt="biale buty"
+            class="container__images-desktop__img-box-item"
+            data-shoe="3"
+          /><img
+            src="./images/image-product-4-thumbnail.jpg"
+            alt="biale buty"
+            class="container__images-desktop__img-box-item"
+            data-shoe="4"
+          />
+        </div>
+      </section>
+      <main class="container__main">
+        <span class="container__main-small-title">sneaker company</span>
+        <h2 class="container__main-title">
+          Fall Limited Edition <br />
+          Sneakers
+        </h2>
+        <p class="container__main-text">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole,they'll withstand everything the
+          weather can offer.
+        </p>
+        <div class="container__main__price">
+          <div class="container__main__price-box">
+            <span class="container__main__price-box-sum">$125.00</span>
+            <span class="container__main__price-box-discount">50%</span>
+          </div>
+          <span class="container__main__price-old">$250.00</span>
+        </div>
+        <div class="div container__main-number__quantity">
+          <div class="container__main-number">
+            <img
+              src="./images/icon-minus.svg"
+              alt="znak minusa"
+              class="minus"
+            />
+            <span class="container__main-quantity">0</span>
+            <img src="./images/icon-plus.svg" alt="znak plusa" class="plus" />
+          </div>
+          <button class="container__main-btn">
+            <img
+              src="./images/icon-cart.svg"
+              alt="koszyk na zakupy"
+              class="container__main-btn-cart"
+            />
+            <span class="container__main-btn-text">Add to cart</span>
+          </button>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
