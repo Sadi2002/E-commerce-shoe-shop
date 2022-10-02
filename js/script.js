@@ -164,9 +164,8 @@ const showCartDesktop = () => {
 // FUNCTION WHICH CLOSE DESKTOP CART (Checkout)
 const showDesktopProduct = () => {
   if (Number(quantity.textContent === 0)) {
-    emptyCartDesktop.classList.remove("shoping");
-    shopingDesktop.classList.add("shoping");
-  } else {
+    return emptyCartDesktop.classList.remove("shoping");
+  } else if (Number(quantity.textContent > 0)) {
     emptyCartDesktop.classList.add("shoping");
     shopingDesktop.classList.remove("shoping");
     desktopQuantity.textContent = Number(quantity.textContent);
